@@ -1,0 +1,15 @@
+/*import fonts 
+  :root {
+    --color-smthn: #ffff;
+  }*/
+
+
+  @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Archivo+Black&family=Inter:wght@400;600;700&family=Jost:wght@100;300;400;600&family=Montserrat:wght@400;500;600;700&family=Nunito:wght@200;300;400;600;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,300&family=Roboto:wght@100;300;400;500;700;900&family=Shrikhand&display=swap');
+
+:root{
+  --dec-font: 'Archivo Black', sans-serif;
+  --font-family: 'Jost', sans-serif;
+
+  --main-color: #77eed8;
+  --gradient-text: linear-gradient(45deg, #9eabe4 0%, #77eed8 74%);
+}

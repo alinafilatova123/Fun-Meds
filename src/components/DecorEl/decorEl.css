@@ -1,0 +1,15 @@
+.decor{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (max-width: 750px) {
+  .decor{
+    width: 90px;
+  }
+}
+@media screen and (max-width: 500) {
+  .decor{
+    width: 70px;
+  }
+}

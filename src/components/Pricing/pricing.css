@@ -1,0 +1,139 @@
+.fm__pricing{
+  display: flex;
+  padding: 2rem 6rem;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.fm__pricing-img-container{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1rem;
+  position: relative;
+  min-width: 300px;
+}
+.fm__pricing-img-container img{
+  height: 400px;
+  width: 400px;
+  object-fit: cover;
+  border-radius: 5px;
+  filter: brightness(0.5);
+  transition: all 400ms ease-out;
+}
+.fm__pricing-img-container div{
+  overflow: hidden;
+  border-radius: 5px;
+  height: 400px;
+  width: 400px;
+}
+.fm__pricing-img-container img:hover{
+  transform: scale(1.2);
+  filter: brightness(1);
+}
+.fm__pricing-img-container img:nth-child(1){
+  object-position: left;
+}
+.fm__pricing-header{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.fm__pricing h1{
+	font-size: 50px;
+	font-weight: 400;
+	margin: 1rem 1rem;
+
+	background-image: var(--gradient-text);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.fn__pricing-info{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem 0;
+}
+.fn__pricing-info a{
+  text-decoration: none;
+}
+.fn__pricing-info h3{
+  font-weight: 300;
+  font-size: 24px;
+}
+.fn__pricing-info span{
+  font-weight: 600;
+  font-size: 34px;
+}
+.fn__pricing-info button{
+  color: white;
+  border: 1px solid var(--main-color);
+  background: transparent;
+  padding: 0.5rem 2.5rem;
+  font-weight: 300;
+  font-size: 16px;
+}
+.fn__pricing-info button:hover{
+  padding: 0.5rem 4rem;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+@media screen and (max-width: 1200px) {
+  .fm__pricing-img-container div{
+    height: 300px;
+    width: 300px;
+  }
+}
+@media screen and (max-width: 950px) {
+  .fm__pricing-img-container div{
+    height: 200px;
+    width: 200px;
+  }
+  .fm__pricing h1{
+    font-size: 40px;
+  }
+  .fm__pricing-img-container img{
+    height: 200px;
+    width: 200px;
+  }
+}
+@media screen and (max-width: 750px) {
+  .fm__pricing h1{
+    font-size: 30px;
+    text-align: center;
+    line-height: 25px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .fm__pricing-img-container div{
+    height: 150px;
+    width: 150px;
+  }
+  .fm__pricing-img-container img{
+    height: 150px;
+    width: 150px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .fm__pricing-img-container div{
+    height: 100px;
+    width: 100px;
+  }
+  .fm__pricing h1{
+    font-size: 24px;
+  }
+  .fm__pricing-img-container img{
+    height: 100px;
+    width: 100px;
+  }
+  .fn__pricing-info h3{
+    font-size: 18px;
+  }
+  .fn__pricing-info span{
+    font-size: 24px;
+  }
+  .fn__pricing-info button{
+    padding: 0.3rem 1.5rem;
+  }
+}

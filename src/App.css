@@ -1,0 +1,36 @@
+/*general styles*/
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+  transition: all 0.2s ease-out;
+  font-family: var(--font-family);
+  color: white;
+}
+body{
+  background: rgb(0, 0, 0);
+}
+.section__padding {
+  padding: 2rem 6rem;
+}
+.section__margin {
+  margin: 2rem 6rem;
+}
+.bg-img{
+  background-image: url('./images/header-img.jpg');
+  background-size: cover;
+  height: 100vh;
+  background-repeat: no-repeat;
+  object-fit: cover;
+  object-position: top;
+}
+.filter{
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.534);
+}
+.scale-up-center {
+	-webkit-animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+

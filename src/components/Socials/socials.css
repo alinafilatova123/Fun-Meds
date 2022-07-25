@@ -1,0 +1,118 @@
+.fm__socials{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.fm__socials-header{
+  display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.fm__socials-header h1{
+	font-size: 50px;
+	font-weight: 400;
+	margin: 1rem 1rem;
+
+	background-image: var(--gradient-text);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.fm__socials-container{
+  margin: 0.1rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.fm__socials-container-element a{
+  text-decoration: none;
+}
+.fm__socials-container-element{
+  display: block;
+  text-align: center;
+  overflow: hidden;
+  
+  width: 1500px;
+  height: 220px;
+}
+.fm__socials-container-element .text{
+  font-size: 200px;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-family: var(--dec-font);
+
+  color: transparent;
+  -webkit-text-stroke: 1px;
+  -webkit-text-stroke-color: white;
+}
+.fm_marquee-wrapper{
+  width: 100000px;
+  animation: animation1 50s linear 0s infinite running;
+}
+.fm_marquee-wrapper-2{
+  width: 100000px;
+  animation: animation2 30s linear 0s infinite;
+}
+.fm_marquee-text{
+  float: left;
+}
+.fm_marquee-text .text:hover{
+  color: var(--main-color);
+  -webkit-text-stroke-color: transparent;
+}
+@keyframes animation1{
+  100%{
+    transform: translateX(-4600px);
+  }
+}
+@keyframes animation2{
+  100%{
+    transform: translateX(-4600px);
+  }
+}
+
+
+@media screen and (max-width: 990px) {
+  .fm__socials-container-element .text{
+    font-size: 150px;
+  }
+  .fm__socials-container-element{
+    height: 160px;
+    width: 990px;
+  }
+  .fm__socials-header h1{
+    font-size: 40px;
+  }
+}
+@media screen and (max-width: 750px) {
+  .fm__socials-container-element .text{
+    font-size: 100px;
+  }
+  .fm__socials-container-element{
+    height: 110px;
+    width: 750px;
+  }
+  .fm__socials-header h1{
+    font-size: 30px;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 500px) {
+  .fm__socials-container-element .text{
+    font-size: 70px;
+  }
+  .fm__socials-container-element{
+    height: 80px;
+    width: 500px;
+  }
+  .fm__socials-header h1{
+    font-size: 24px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .fm__socials-container-element{
+    height: 80px;
+    width: 400px;
+  }
+}

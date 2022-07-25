@@ -1,0 +1,99 @@
+.fm__contact-header{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.fm__contact h1{
+	font-size: 50px;
+	font-weight: 400;
+	margin: 0 1rem;
+
+	background-image: var(--gradient-text);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.fm__contact form{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.fm__contact-input-container{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin: 1rem 0;
+}
+.fm__contact-input-container p{
+	margin-right: auto;
+	font-weight: 300;
+	font-size: 18px;
+}
+.fm__contact-input-container input,
+.fm__contact-input-container textarea{
+	margin: 0.3rem 0;
+	width: 900px;
+	height: 40px;
+}
+.fm__contact-input-container input,
+.fm__contact-input-container textarea{
+	background: transparent;
+	border: 1px solid rgb(24, 32, 44);
+	outline: none;
+	padding: 0.2rem 0.7rem;
+}
+.fm__contact-input-container textarea{
+	width: 900px;
+	height: 200px;
+}
+.fm__contact-input-container textarea:focus,
+.fm__contact-input-container input:focus{
+	border: 1px solid var(--main-color);
+}
+.form-btn{
+	color: white;
+  border: 1px solid var(--main-color);
+  background: transparent;
+  padding: 0.5rem 2.5rem;
+  font-weight: 300;
+  font-size: 16px;
+}
+.form-btn:hover{
+	padding: 0.5rem 4rem;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+
+@media screen and (max-width: 990px) {
+	.fm__contact-input-container input,
+	.fm__contact-input-container textarea{
+		width: 700px;
+	}
+	.fm__contact h1{
+		font-size: 40px;
+		text-align: center;
+	}
+}
+@media screen and (max-width: 750px) {
+	.fm__contact-input-container input,
+	.fm__contact-input-container textarea{
+		width: 450px;
+	}
+	.fm__contact h1{
+		font-size: 30px;
+	}
+}
+@media screen and (max-width: 500px) {
+	.fm__contact-input-container input,
+	.fm__contact-input-container textarea{
+		width: 300px;
+	}
+	.fm__contact h1{
+		font-size: 24px;
+	}
+	.fm__contact-input-container p{
+		font-size: 16px;
+	}
+}

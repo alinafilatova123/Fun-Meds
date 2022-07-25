@@ -1,0 +1,7 @@
+export {default as Navbar} from './Navbar/Navbar'
+export {default as Gallery} from './Gallery/Gallery'
+export {default as Footer} from './Footer/Footer'
+export {default as Header} from './Header/Header'
+export {default as Pricing} from './Pricing/Pricing'
+export {default as Contact} from './Contact/Contact'
+export {default as Socials} from './Socials/Socials'
